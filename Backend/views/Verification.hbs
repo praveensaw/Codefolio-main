@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify Your Email</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #e0f7ff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 30px auto;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 123, 255, 0.15);
+        overflow: hidden;
+        padding: 40px 30px;
+      }
+
+      .header {
+        text-align: center;
+        background-color: #38bdf8;
+        color: white;
+        padding: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .content {
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .content p {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .button {
+        display: inline-block;
+        background-color: #0ea5e9;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #0284c7;
+      }
+
+      .footer {
+        margin-top: 40px;
+        font-size: 0.85rem;
+        text-align: center;
+        color: #666;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+
+        .header {
+          font-size: 1.2rem;
+        }
+
+        .content p {
+          font-size: 0.95rem;
+        }
+
+        .button {
+          padding: 10px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Welcome to CodeVerse</div>
+      <div class="content">
+        <p>Hi there 👋</p>
+        <p>
+          Thanks for signing up! You're almost there. To complete your
+          registration, please verify your email by clicking the button below.
+        </p>
+        <a href="{{verificationUrl}}" class="button">Verify Email</a>
+        <p style="margin-top: 24px;">
+          This link will expire in 1 hour. If you didn’t create an account, you
+          can ignore this email.
+        </p>
+      </div>
+      <div class="footer">© 2025 CodeVerse. All rights reserved.</div>
+    </div>
+  </body>
+</html>

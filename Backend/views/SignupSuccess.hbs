@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 10px auto;
+      background: #fff;
+      border-radius: 8px;
+      border: 2px solid black;
+      box-shadow: 0 4px 8px rgb(0, 115, 255);
+      padding: 30px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .feature-list li {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #0694cd;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      margin-left: 200px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Our Platform, {{name}}!</h1>
+    <p>Congratulations on successfully signing up. We’re thrilled to have you on board!</p>
+
+    <p>Our platform is designed to help you easily showcase your coding skills, connect with recruiters, and enhance
+      your development career.</p>
+
+    <h3>Our Vision</h3>
+    <p>We aim to create a seamless space where developers can display their coding achievements and connect with the
+      right opportunities. Our platform brings recruiters and developers together to empower both parties.</p>
+
+    <h3>Features of Our Platform:</h3>
+    <ul class="feature-list">
+      <li>📊 Track and display your coding achievements across platforms like LeetCode, GeeksforGeeks, CodeChef, and
+        more.</li>
+      <li>🔗 One-click access to your coding profiles and portfolio.</li>
+      <li>💼 Connect with recruiters and land your dream job.</li>
+      <li>📈 Analyze your coding performance with in-depth stats and graphs.</li>
+    </ul>
+
+    <p>Now that you're on the platform, here's how to get started:</p>
+
+    <a href="https://codefolio-platform.vercel.app/user/{{username}}/edit" class="cta-button" target="_blank">Visit Your
+      Profile</a>
+
+    <div class="footer">
+      <p>If you have any questions or need support, feel free to reach out to our team.</p>
+      <p>We look forward to seeing you grow and succeed!</p>
+    </div>
+  </div>
+</body>
+
+</html>
